@@ -5,8 +5,8 @@
     "title": "My Project",
     "description": "Usage of google books API"
   },
-  "host": "www.googleapis.com/books/v1",
-  "basePath": "/",
+  "host": "www.googleapis.com/books/v1/",
+  "basePath": "",
   "tags": [
     {
       "name": "Books",
@@ -17,7 +17,7 @@
   "consumes": ["application/json"],
   "produces": ["application/json"],
   "paths": {
-    "/volumes?q=harry potter&key=AIzaSyBC_mjYO7w2RI1YQdswliY4KA-ZQvuBtZY": {
+    "/volumes?q=harrypotter&key=AIzaSyBC_mjYO7w2RI1YQdswliY4KA-ZQvuBtZY": {
       "get": {
         "tags": ["books"],
         "summary": "Get all books",
