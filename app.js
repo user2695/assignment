@@ -16,11 +16,6 @@ const swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('./swagger.json');
 
 
-// app.get("/", function (req, res) {
-//   res.render("home");
-// });
-
-
 app.get("/", function (req, res) {
   const key = "key here";
   const query = req.body.book;
