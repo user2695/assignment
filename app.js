@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
+<<<<<<< HEAD
 const swaggerUi = require("swagger-ui-express"),
   swaggerDocument = require("./swagger.json");
 app.get("/", (req, res) => {
@@ -19,6 +20,14 @@ app.get("/", (req, res) => {
 });
 app.post("/", (req, res) => {
   const key = "AIzaSyBC_mjYO7w2RI1YQdswliY4KA-ZQvuBtZY";
+=======
+const swaggerUi = require('swagger-ui-express'),
+swaggerDocument = require('./swagger.json');
+
+
+app.get("/", function (req, res) {
+  const key = "key here";
+>>>>>>> 3e5d39e3afb75bfdaa0a8d83663acb7cd93f6a18
   const query = req.body.book;
   const url =
     "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=" + key;
