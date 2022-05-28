@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 app.post("/", (req, res) => {
-  const key = "AIzaSyBC_mjYO7w2RI1YQdswliY4KA-ZQvuBtZY";
+  const key = "KEY HERE";
   const query = req.body.book;
   const url =
     "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=" + key;
